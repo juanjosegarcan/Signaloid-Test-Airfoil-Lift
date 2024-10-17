@@ -40,16 +40,16 @@ and $T(h)$ is the ambient temperature at computed as:
 $T(h) = T - TR \cdot h$
 
 Where: 
-- $TR$ is the temperature lapse rate, which represents how much the temperature drops per meter of altitude typically with values betweeen 0.006 and $0.007 \frac{K}{m}$
+- $TR$ is the temperature lapse rate, which represents how much the temperature drops per meter of altitude typically with values betweeen 0.006 and 0.007 $\frac{K}{m}$
 
 ## Assumptions
 - The lift coefficient $C_{L}$ is assumed to be constant for simplicity, though in a more complex model it could vary with the angle of attack: $C_{L} = 1.2$ (typical for moderate angles of attack).
 - The airfoil’s geometry and properties are assumed to be known and fixed: $A = 30 m^2$
-- Wind speed is an uniform distribution from Pitot tube data: $v =  60 - 120 \frac{m}{s}$.
-- Temperature is gaussian distribution with a mean of 300 K and a standard deviation of 2 K. $T = 300K +- 2K$
-- Humidity is an uniform distribution from 40% to 60%: $RH = 40 - 60 %$
-- Altitud is an uniform distribution from 3000m to 9000m: $h = 3000 - 9000 m$  
+- Wind speed is an uniform distribution from Pitot tube data: $v =  [60, 120] \frac{m}{s}$.
+- Temperature is gaussian distribution with a mean of 300 K and a standard deviation of 2 K. $T = 300 \pm 2 K$
+- Humidity is an uniform distribution from 40% to 60%: $RH = [0.4, 0.6]$
+- Altitud is an uniform distribution from 3000m to 9000m: $h = [3000, 9000] m$  
 
 ## References
-Bernoulli's Principle: [https://en.wikipedia.org/wiki/Bernoulli%27s_principle](https://en.wikipedia.org/wiki/Bernoulli%27s_principle)
-Signaloid Cloud Developer Platform Documentation: [Signaloid Docs](https://docs.signaloid.io/)
+- Bernoulli's Principle: [https://en.wikipedia.org/wiki/Bernoulli%27s_principle](https://en.wikipedia.org/wiki/Bernoulli%27s_principle) 
+- Signaloid Cloud Developer Platform Documentation: [Signaloid Docs](https://docs.signaloid.io/)
